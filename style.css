@@ -31,6 +31,7 @@ h1, h2 {
     grid-row: 1 / -1;
     background-color: #03033f;
     color: white;
+    font-size: 1.5rem;
 }
 
 .sidebar a {
@@ -38,15 +39,33 @@ h1, h2 {
     color: white;
 }
 
+.sidebar svg {
+    fill: white;
+    width: 1rem;
+    height: auto;
+}
+
 .header {
     grid-column: 2 / -1;
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 0.5rem;
+    margin: 1rem 2rem;
 }
 
 .header-top {
     grid-row: 1;
+    display: grid;
+    grid-template-columns: 3rem 1fr 3rem 3rem 5rem;
+    gap: 2rem;
+    align-content: center;
+}
+
+input {
+    border: none;
+    border-radius: 2rem;
+    width: 80%;
+    background-color: aliceblue;
 }
 
 .header-bottom {
@@ -60,7 +79,7 @@ h1, h2 {
     background-color: aliceblue;
     display: grid;
     grid-template-columns: 1fr 20rem;
-    grid-template-rows: 5fr 4fr;
+    grid-template-rows: 28rem 1fr;
 }
 
 .project-container {
@@ -68,7 +87,6 @@ h1, h2 {
     grid-row: 1 / -1;
     display: grid;
     grid-template-rows: 2rem 1fr;
-    align-content: stretch;
 }
 
 .projects {
@@ -87,6 +105,8 @@ h1, h2 {
 
 .announcement-container {
     margin: 1rem;
+    display: grid;
+    grid-template-rows: 2rem 25rem;
 }
 
 .announcements {
@@ -98,19 +118,28 @@ h1, h2 {
     gap: 1rem;
 }
 
-.announcements div {
-    max-height: fit-content;
-    
-}
-
-.announcements .bordered {
+ .announcements .bordered {
     border-top: 2px solid lightgray;
     padding-top: 1rem;
-}
+} 
 
 .trending-container {
     margin: 1rem;
-    grid-template-columns: 2;
-    grid-template-rows: 2;
+    display: grid;
+    grid-template-rows: 2rem 1fr;
+    align-content: start;
 }
 
+.trending {
+    display: grid;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    gap: 2rem;
+}
+
+.trending > div {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
