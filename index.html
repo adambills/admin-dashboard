@@ -7,104 +7,137 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="sidebar">
-        <div class="logo">
-            <img src="" alt="Dashboard Logo">
-            <h1>Dashboard</h1>
+    <div class="container">
+
+        <div class="sidebar">
+            <div class="logo">
+                <img src="" alt="Dashboard Logo">
+                <h1>Dashboard</h1>
+            </div>
+            <nav>
+                <div>
+                    <a href="">Home</a>
+                    <a href="">Profile</a>
+                    <a href="">Messages</a>
+                    <a href="">History</a>
+                    <a href="">Tasks</a>
+                    <a href="">Communities</a>
+                </div>
+                <div>
+                    <a href="">Settings</a>
+                    <a href="">Support</a>
+                    <a href="">Privacy</a>
+                </div>
+            </nav>
         </div>
-        <nav>
-            <div>
-                <a href="">Home</a>
-                <a href="">Profile</a>
-                <a href="">Messages</a>
-                <a href="">History</a>
-                <a href="">Tasks</a>
-                <a href="">Communities</a>
+
+        <header class="header">
+            <div class="header-top">
+                <img src="" alt="Search Icon" id="search-icon">
+                <div class="search-bar"></div>
+                <img src="" alt="Notification Icon" id="notification">
+                <img src="" alt="Profile Picture" class="profile">
+                <div class="username">Morgan Oakley</div>
             </div>
-            <div>
-                <a href="">Settings</a>
-                <a href="">Support</a>
-                <a href="">Privacy</a>
+            <div class="header-bottom">
+                <div class="current-user">
+                    <img src="" alt="Profile Picture" class="profile">
+                    <div>
+                        <div>Hi there,</div>
+                        <div class="username">Morgan Oakley (@morgan)</div>
+                    </div>
+                </div>
+                <div class="header-btns">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
             </div>
-        </nav>
+        </header>
+        
+        <main class="main">
+            <section class="project-container">
+                <h1>Your Projects</h1>
+                <div class="projects">
+                    <div>
+                        <h2>Super Cool Project</h2>
+                        <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                    </div>
+                    <div>
+                        <h2>Less Cool Project</h2>
+                        <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisqe sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
+                    </div>
+                    <div>
+                        <h2>Impossible App</h2>
+                        <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+                    </div>
+                    <div>
+                        <h2>Easy App</h2>
+                        <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
+                    </div>
+                    <div>
+                        <h2>Mildly Interesting App</h2>
+                        <p>Quisqe eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+                    </div>
+                    <div>
+                        <h2>Boring Project</h2>
+                        <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="announcement-container">
+                <h1>Announcements</h1>
+                <div class="announcements">
+                    <div>
+                        <h2>Site Maintenance</h2>
+                        <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
+                    </div>
+                    <div class="bordered">
+                        <h2>Community Share Day</h2>
+                        <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
+                    </div>
+                    <div class="bordered">
+                        <h2>Updated Privacy Policy</h2>
+                        <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
+                    </div>
+                </div>
+            </section>
+            <section class="trending-container">
+                <h1>Trending</h1>
+                <div class="trending">
+                    <div>
+                        <img src="" alt="Profile Picture" class="profile">
+                        <div>
+                            <div>@tegan</div>
+                            <p>Some Cool Text</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="" alt="Profile Picture" class="profile">
+                        <div>
+                            <div>@morgan</div>
+                            <p>Some Cool Text</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="" alt="Profile Picture" class="profile">
+                        <div>
+                            <div>@kendall</div>
+                            <p>Some Cool Text</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="" alt="Profile Picture" class="profile">
+                        <div>
+                            <div>@alex</div>
+                            <p>Some Cool Text</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
     </div>
 
-    <header>
-        <div class="header-top">
-            <img src="" alt="Search Icon" id="search-icon">
-            <div class="search-bar"></div>
-            <img src="" alt="Notification Icon" id="notification">
-            <img src="" alt="Profile Picture" class="profile">
-            <div class="username">Morgan Oakley</div>
-        </div>
-        <div class="header-bottom">
-            <div class="current-user">
-                <img src="" alt="Profile Picture" class="profile">
-                <div>
-                    <div>Hi there,</div>
-                    <div class="username">Morgan Oakley (@morgan)</div>
-                </div>
-            </div>
-            <div class="header-btns">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
-            </div>
-        </div>
-    </header>
-    
-    <main>
-        <section class="project-container">
-            <h1>Your Projects</h1>
-            <div class="projects">
-                <div>
-                    <h2>Super Cool Project</h2>
-                    <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
-                </div>
-                <div>
-                    <h2>Less Cool Project</h2>
-                    <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisqe sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
-                </div>
-                <div>
-                    <h2>Impossible App</h2>
-                    <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
-                </div>
-                <div>
-                    <h2>Easy App</h2>
-                    <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
-                </div>
-                <div>
-                    <h2>Mildly Interesting App</h2>
-                    <p>Quisqe eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
-                </div>
-                <div>
-                    <h2>Boring Project</h2>
-                    <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</p>
-                </div>
-            </div>
-        </section>
-        <section class="announcement-container">
-            <h1>Announcements</h1>
-            <div class="announcements">
-                <div>
-                    <h2>Site Maintenance</h2>
-                    <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
-                </div>
-                <div>
-                    <h2>Community Share Day</h2>
-                    <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
-                </div>
-                <div>
-                    <h2>Updated Privacy Policy</h2>
-                    <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
-                </div>
-            </div>
-        </section>
-        <section class="trending-container">
-            <h1>Trending</h1>
-
-        </section>
-    </main>
-    
 </body>
 </html>

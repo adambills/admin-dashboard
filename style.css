@@ -12,3 +12,105 @@ html, body {
     min-height: 100%;
     box-sizing: border-box;
 }
+
+h1 {
+    font-size: 1.25rem;
+}
+
+h1, h2 {
+    font-weight: 500;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 4rem 1fr;
+}
+
+.sidebar {
+    grid-row: 1 / -1;
+    background-color: #03033f;
+    color: white;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    grid-column: 2 / -1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.header-top {
+    grid-row: 1;
+}
+
+.header-bottom {
+    grid-row: 2;
+}
+
+.main {
+    grid-row: 2 / -1;
+    grid-column: 2 / -1;
+    margin-top: 6rem;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 1fr 20rem;
+    grid-template-rows: 5fr 4fr;
+}
+
+.project-container {
+    margin: 1rem;
+    grid-row: 1 / -1;
+    display: grid;
+    grid-template-rows: 2rem 1fr;
+    align-content: stretch;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.projects div {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border-left: 0.5rem solid orange;
+}
+
+.announcement-container {
+    margin: 1rem;
+}
+
+.announcements {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    gap: 1rem;
+}
+
+.announcements div {
+    max-height: fit-content;
+    
+}
+
+.announcements .bordered {
+    border-top: 2px solid lightgray;
+    padding-top: 1rem;
+}
+
+.trending-container {
+    margin: 1rem;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+}
+
