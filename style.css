@@ -14,10 +14,10 @@ html, body {
 }
 
 h1 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 h2 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
 }
 h1, h2 {
     font-weight: 500;
@@ -37,7 +37,7 @@ h1, h2 {
     color: white;
     display: grid;
     grid-template-rows: auto auto 1fr;
-    gap: 5rem;
+    gap: 4rem;
     padding: 2rem;
 }
 
@@ -49,32 +49,34 @@ h1, h2 {
 }
 
 .sidebar h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .sidebar a {
     text-decoration: none;
     color: white;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 500;
 }
 
 .sidebar svg {
     fill: white;
-    width: 2rem;
+    width: 1.75rem;
     height: auto;
+    justify-self: center;
 }
 
 .sidebar .logo svg {
-    width: 4rem;
+    width: 3.5rem;
 }
 
-/* .sidebar nav {
-    grid-row: 2;
+.sidebar > div > div {
     display: grid;
-    grid-template-r: auto 1fr;
-    gap: 5rem;
-} */
+    grid-template-columns: 3.5rem 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
 
 /* Header */
 
@@ -84,7 +86,9 @@ h1, h2 {
     display: grid;
     grid-template-rows: 3rem 5rem;
     gap: 2rem;
-    margin: 1rem 2rem;
+    padding: 1rem 2rem;
+    box-shadow: 1px 4px 4px lightgray;
+    z-index: 1;
 }
 
 .header-top {
@@ -147,7 +151,8 @@ h1, h2 {
     border-radius: 2rem;
     color: white;
     height: 3rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
 }
 
 /* Main Section */
@@ -159,6 +164,7 @@ h1, h2 {
     display: grid;
     grid-template-columns: 1fr 25rem;
     grid-template-rows: 28rem 1fr;
+    padding: 1rem;
 }
 
 .project-container {
@@ -197,6 +203,15 @@ h1, h2 {
     height: auto;
 }
 
+.projects, .announcements, .trending {
+    margin-top: 0.5rem;
+}
+
+.main p {
+    color: gray;
+    margin-top: 0.25rem;
+}
+
 /* Announcements */
 
 .announcement-container {
@@ -219,10 +234,18 @@ h1, h2 {
     padding-top: 1rem;
 } 
 
+.announcements h2 {
+    font-size: 1.125rem;
+}
+
+.announcements p {
+    font-size: 0.875rem;
+}
+
 /* Trending */
 
 .trending-container {
-    margin: 1rem;
+    margin: 2rem 1rem 1rem;
     display: grid;
     grid-template-rows: 2rem 1fr;
     align-content: start;
