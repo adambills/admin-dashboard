@@ -16,7 +16,9 @@ html, body {
 h1 {
     font-size: 1.25rem;
 }
-
+h2 {
+    font-size: 1.125rem;
+}
 h1, h2 {
     font-weight: 500;
 }
@@ -24,61 +26,138 @@ h1, h2 {
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 4rem 1fr;
+    grid-template-rows: 12rem 1fr;
 }
+
+/* Sidebar */
 
 .sidebar {
     grid-row: 1 / -1;
-    background-color: #03033f;
+    background-color: #1e1b4b;
     color: white;
-    font-size: 1.5rem;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 5rem;
+    padding: 2rem;
+}
+
+.sidebar .logo {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sidebar h1 {
+    font-size: 2.5rem;
 }
 
 .sidebar a {
     text-decoration: none;
     color: white;
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 .sidebar svg {
     fill: white;
-    width: 1rem;
+    width: 2rem;
     height: auto;
 }
 
+.sidebar .logo svg {
+    width: 4rem;
+}
+
+/* .sidebar nav {
+    grid-row: 2;
+    display: grid;
+    grid-template-r: auto 1fr;
+    gap: 5rem;
+} */
+
+/* Header */
+
 .header {
     grid-column: 2 / -1;
+    grid-row: 1;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 0.5rem;
+    grid-template-rows: 3rem 5rem;
+    gap: 2rem;
     margin: 1rem 2rem;
 }
 
 .header-top {
     grid-row: 1;
     display: grid;
-    grid-template-columns: 3rem 1fr 3rem 3rem 5rem;
+    grid-template-columns: 3rem 1fr 3rem 3rem 10rem;
     gap: 2rem;
-    align-content: center;
+    align-items: center;
+    margin-right: 4rem;
+    font-size: 2rem;
 }
-
-input {
+.header-top img {
+    width: 2rem;
+    height: auto;
+    justify-self: center;
+}
+.header-top .profile {
+    width: 3.5rem;
+    height: auto;
+}
+.header-top input {
     border: none;
     border-radius: 2rem;
     width: 80%;
-    background-color: aliceblue;
+    background-color: #e0e7ff;
+    font-size: 2rem;
 }
-
 .header-bottom {
     grid-row: 2;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    justify-content: start;
 }
+
+.current-user {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    align-items: center;
+    font-weight: 500;
+    gap: 1rem;
+}
+.current-user > img {
+    width: 5rem;
+    height: auto;
+}
+.current-user .username {
+    font-size: 2rem;
+}
+.header-btns {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 3rem;
+    margin-right: 4rem;
+}
+.header-btns button {
+    border: none;
+    background-color: #1e1b4b;
+    border-radius: 2rem;
+    color: white;
+    height: 3rem;
+    font-size: 1.5rem;
+}
+
+/* Main Section */
 
 .main {
     grid-row: 2 / -1;
     grid-column: 2 / -1;
-    margin-top: 6rem;
-    background-color: aliceblue;
+    background-color: #eef2ff;
     display: grid;
-    grid-template-columns: 1fr 20rem;
+    grid-template-columns: 1fr 25rem;
     grid-template-rows: 28rem 1fr;
 }
 
@@ -96,12 +175,29 @@ input {
     gap: 2rem;
 }
 
-.projects div {
+.projects > div {
     background-color: white;
     border-radius: 0.5rem;
     padding: 1rem;
-    border-left: 0.5rem solid orange;
+    border-left: 0.5rem solid rgb(255, 204, 111);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
+.img-container {
+    justify-self: end;
+    align-self: end;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.projects img {
+    width: 2rem;
+    height: auto;
+}
+
+/* Announcements */
 
 .announcement-container {
     margin: 1rem;
@@ -122,6 +218,8 @@ input {
     border-top: 2px solid lightgray;
     padding-top: 1rem;
 } 
+
+/* Trending */
 
 .trending-container {
     margin: 1rem;
